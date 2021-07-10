@@ -2,7 +2,13 @@
 .nyc_output/
 coverage/
 dist/
-node_modules/
+
+# dependencies
+!/node_modules/
+/node_modules/*
+!/node_modules/dayjs/
+/node_modules/dayjs/*
+!/node_modules/dayjs/esm/
 
 # IDE - VSCode
 .vscode/*
