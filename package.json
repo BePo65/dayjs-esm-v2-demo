@@ -17,7 +17,9 @@
   ],
   "scripts": {
     "build": "npm run clean && tsc --project tsconfig.app.json",
-    "start": "npm run build && node --experimental-specifier-resolution=node dist/index.js",
+    "start": "npm run start:basic && npm run start:locale",
+    "start:basic": "npm run build && node --experimental-specifier-resolution=node dist/index.js",
+    "start:locale": "npm run build && node --experimental-specifier-resolution=node dist/index-locale.js",
     "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules\" jest",
     "clean": "cf dist",
     "upgrade": "npx npm-check -u"
