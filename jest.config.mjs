@@ -16,5 +16,8 @@ export default {
   },
   testMatch: [
     "<rootDir>/test/**/*.spec.ts"
+  ],
+  "reporters": [
+    "default"
   ]
 };
