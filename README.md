@@ -12,7 +12,7 @@ npm run start
 
 requires experimental flag for node to resolve the imports in dayjs/index.js:
 ```bash
-node --experimental-specifier-resolution=node dist/index.js
+node --experimental-specifier-resolution=node demo/index.js
 ```
 
 ## Tests
