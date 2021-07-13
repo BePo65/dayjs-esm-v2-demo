@@ -17,7 +17,11 @@ export default {
   testMatch: [
     "<rootDir>/test/**/*.spec.ts"
   ],
-  "reporters": [
+  "moduleDirectories": [
+    "node_modules",
+    "lib"
+  ],
+  reporters: [
     "default"
   ]
 };
