@@ -2,6 +2,20 @@
 
 A simple Node.js project using Dayjs with TypeScript by importing from 'dayjs/esm' with updated type definitions.
 
+## Why I modified the type definitions
+
+The dayjs library contains a folder with a variant of dayjs that uses the ES module system ('esm'). I created a demo using this with javascript and all was running as expected.
+
+But trying to use the same library with my esm based angular app failed; IMHO because the type definitions don't match the code. The code uses `export default ...`, but the tyoe definitions use `export = ...`.
+
+So I changed the type definitions to `export default ...` too. That caused problems with the namespaces: I didn't find a way to enable using the default export and at the same time to use named exports.
+
+I decided to prefer the default export over named exports and only put the defined type into the module `dayjs/esm`.
+
+For the `duration` plugin I found no way to enable named exports for the plugin (as required by issue #1360) as this would require to put the Duration class into the same namespace, but this would collide with the way, all other plugin and dayjs itself are structured. So I added the types to the 'dayjs/esm' module as named export as it is done for all other plugins too.
+
+For the `localeData` plugin all types go to the module 'dayjs/esm' and all interfaces and methods go to the namespace 'dayjs'
+
 ## Cli
 
 Run this demo in the console with:
@@ -32,8 +46,6 @@ Sequence of imports seem to be of importance - importing 'advancedFormat' before
 **Import**
 
 Import always from `dayjs/esm`.
-
-**Attention** the type definition files in 'node_modules/dayjs/esm' are modified and will be reset on any `npm install`. So after any `npm install` they have to be copied from the source again.
 
 **Entry in package.json**
 ```json
