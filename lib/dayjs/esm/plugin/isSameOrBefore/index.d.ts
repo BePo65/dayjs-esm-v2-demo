@@ -6,9 +6,7 @@ export default plugin
 declare module 'dayjs/esm' {
   namespace dayjs {
     interface Dayjs {
-      weekday(): number
-
-      weekday(value: number): Dayjs
+      isSameOrBefore(date: ConfigType, unit?: OpUnitType): boolean
     }
   }
 }

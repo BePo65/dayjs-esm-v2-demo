@@ -1,4 +1,4 @@
-import { PluginFunc, ConfigType, OpUnitType } from 'dayjs/esm'
+import { PluginFunc } from 'dayjs/esm'
 
 declare const plugin: PluginFunc
 export default plugin
@@ -6,7 +6,7 @@ export default plugin
 declare module 'dayjs/esm' {
   namespace dayjs {
     interface Dayjs {
-      isSameOrBefore(date: ConfigType, unit?: OpUnitType): boolean
+      calendar(referenceTime?: ConfigType, formats?: object): string
     }
   }
 }

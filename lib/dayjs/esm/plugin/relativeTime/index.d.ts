@@ -1,4 +1,4 @@
-import { PluginFunc, ConfigType } from 'dayjs/esm'
+import { PluginFunc } from 'dayjs/esm'
 
 export interface RelativeTimeThreshold {
   l: string

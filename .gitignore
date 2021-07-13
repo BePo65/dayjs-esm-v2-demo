@@ -4,11 +4,7 @@ coverage/
 demo/
 
 # dependencies
-!/node_modules/
-/node_modules/*
-!/node_modules/dayjs/
-/node_modules/dayjs/*
-!/node_modules/dayjs/esm/
+/node_modules/
 
 # IDE - VSCode
 .vscode/*
