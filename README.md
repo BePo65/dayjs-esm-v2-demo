@@ -53,7 +53,7 @@ Requires a new file named `package.json` in `dayjs/esm` with the following conte
     }
 ```
 
-**tsconfig.json**
+**tsconfig.base.json**
 ```json
     {
       "compilerOptions": {
@@ -63,3 +63,7 @@ Requires a new file named `package.json` in `dayjs/esm` with the following conte
       }
     }
 ```
+
+**tsconfig.json**
+
+This configuration is used by VScode. In VScode there is no configuration option to use different tsconfig.json for tests and runtime. So I created a special tsconfig for VScode,
