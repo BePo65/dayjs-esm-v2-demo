@@ -1,6 +1,6 @@
 /// <reference path="./locale/index.d.ts" />
 
-export default dayjs;
+export default dayjs
 
 export function dayjs (date?: ConfigType, format?: OptionType, locale?: string, strict?: boolean): dayjs.Dayjs
 export function dayjs (date?: ConfigType, format?: OptionType, strict?: boolean): dayjs.Dayjs
@@ -408,8 +408,8 @@ export type OptionType = { locale?: string, format?: string, utc?: boolean } | s
 export type UnitTypeShort = 'd' | 'M' | 'y' | 'h' | 'm' | 's' | 'ms'
 export type UnitTypeLong = 'millisecond' | 'second' | 'minute' | 'hour' | 'day' | 'month' | 'year' | 'date'
 export type UnitTypeLongPlural = 'milliseconds' | 'seconds' | 'minutes' | 'hours' | 'days' | 'months' | 'years' | 'dates'
-export type UnitType = UnitTypeLong | UnitTypeLongPlural | UnitTypeShort;
-export type OpUnitType = UnitType | "week" | "weeks" | 'w';
-export type QUnitType = UnitType | "quarter" | "quarters" | 'Q';
+export type UnitType = UnitTypeLong | UnitTypeLongPlural | UnitTypeShort
+export type OpUnitType = UnitType | "week" | "weeks" | 'w'
+export type QUnitType = UnitType | "quarter" | "quarters" | 'Q'
 
 export type PluginFunc<T = unknown> = (option: T, c: dayjs.Dayjs, d: typeof dayjs) => void

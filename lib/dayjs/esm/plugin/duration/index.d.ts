@@ -22,7 +22,7 @@ declare module 'dayjs/esm' {
 
   export type DurationUnitsObjectType = Partial<{
     [unit in Exclude<UnitTypeLongPlural, "dates"> | "weeks"]: number
-  }>;
+  }>
 
   export type DurationUnitType = Exclude<OpUnitType, "date" | "dates">
 
@@ -86,7 +86,7 @@ declare module 'dayjs/esm' {
     /**
      * @param time - If unit is not present, time is treated as number of milliseconds
      */
-    export const duration: CreateDurationType;
+    export const duration: CreateDurationType
 
     interface Dayjs {
       add(duration: Duration): Dayjs

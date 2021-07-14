@@ -5,7 +5,7 @@ export default plugin
 
 
 declare module 'dayjs/esm' {
-  export type ISOUnitType = OpUnitType | 'isoWeek';
+  export type ISOUnitType = OpUnitType | 'isoWeek'
 
   namespace dayjs {
     interface Dayjs {
