@@ -1,7 +1,3 @@
-// The subdirectory "esm" of the installed version of "dayjs" is modified,
-// to make necessary modifications to the type definitions.
-// No code is modified.
-
 import dayjs from 'dayjs/esm';
 import calendar from 'dayjs/esm/plugin/calendar';
 
