@@ -24,7 +24,9 @@ Run this demo in the console with:
 npm run start
 ```
 
-requires experimental flag for node to resolve the imports in dayjs/index.js:
+Only a few plugins are used in this small demos.
+
+Running the code in the demo directory requires the experimental flag for node to resolve the imports in dayjs/index.js:
 ```bash
 node --experimental-specifier-resolution=node demo/index.js
 ```
@@ -36,6 +38,8 @@ ts-jest is used as a test runner. Start tests with:
 ```bash
 npm run test
 ```
+
+The tests are using all plugins, but not all methods of the plugins.
 
 Jest configuration file must have the extension mjs, otherwise jest cannot import the configruation in this esm environment.
 
