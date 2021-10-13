@@ -7,7 +7,7 @@ export default {
   preset: 'ts-jest/presets/default-esm',
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.spec.json',
+      tsconfig: 'tsconfig.spec.json',
       useESM: true,
       diagnostics: {
         ignoreCodes: [151001]
