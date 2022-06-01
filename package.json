@@ -1,6 +1,6 @@
 {
   "name": "test-dayjs-typescript-esm-updated-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A project to test dayjs using TypeScript.",
   "keywords": [
     "typescript",
@@ -27,14 +27,14 @@
     "upgrade": "npx npm-check -u"
   },
   "devDependencies": {
-    "@types/jest": "^27.5.0",
-    "@types/node": "^16.11.33",
+    "@types/jest": "^27.5.1",
+    "@types/node": "^16.11.38",
     "clear-folder": "^4.0.0",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
-    "jest": "^28.0.3",
-    "ts-jest": "^28.0.1",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.4"
+    "jest": "^28.1.0",
+    "ts-jest": "^28.0.3",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
   }
 }
