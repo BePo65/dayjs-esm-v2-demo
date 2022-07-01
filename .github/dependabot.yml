@@ -9,3 +9,4 @@ updates:
   - dependency-name: "@types/node"
     versions:
     - ^17.0.0
+    - ^18.0.0
