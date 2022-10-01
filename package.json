@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@types/jest": "^28.1.8",
-    "@types/node": "^16.11.56",
+    "@types/node": "^16.11.62",
     "clear-folder": "^4.1.0",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
